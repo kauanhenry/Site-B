@@ -335,42 +335,105 @@ nav a:hover { color: var(--dourado); }
 @media screen and (max-width: 768px) {
 
     .navbar {
-        padding: 12px 5%;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        background: #070708;
+        padding: 12px 5% !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        background: #070708 !important;
     }
 
     .logo {
-        font-size: 1.2rem;
+        font-size: 1.2rem !important;
     }
 
     nav a:not(.insta-nav) {
-        display: none;
+        display: none !important;
+    }
+
+    nav {
+        margin: 0 !important;
     }
 
     .insta-nav {
-        margin: 0;
-        padding: 0;
-        width: 38px;
-        height: 38px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 40px !important;
+        height: 40px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        border-radius: 50% !important;
+        background: rgba(225, 193, 88, 0.1) !important;
     }
 
     .insta-nav i {
-        font-size: 1.2rem;
+        font-size: 1.3rem !important;
     }
 
     .insta-nav .texto-insta {
-        display: none;
+        display: none !important;
     }
 
-@media screen and (max-width: 380px) {
-    .hero-textos h1 {
-        font-size: 1.9rem;
+    .hero-section {
+        padding: 100px 5% 40px 5% !important;
+        min-height: auto !important;
+        display: block !important;
     }
-}}
+
+    .hero-wrapper {
+        grid-template-columns: 1fr !important;
+        gap: 25px !important;
+    }
+
+    .hero-textos {
+        text-align: center !important;
+        order: 2 !important;
+    }
+
+    .hero-textos h1 {
+        font-size: 2.3rem !important;
+        line-height: 1.2 !important;
+    }
+
+    .hero-textos p {
+        font-size: 1rem !important;
+        margin: 0 auto 25px auto !important;
+    }
+
+    .hero-botoes {
+        flex-direction: column !important;
+        gap: 12px !important;
+        width: 100% !important;
+    }
+
+    .btn-principal-gold,
+    .btn-secundario-insta {
+        width: 100% !important;
+        text-align: center !important;
+        padding: 14px !important;
+    }
+
+    .hero-banner-box {
+        height: 260px !important;
+        order: 1 !important;
+    }
+
+    .portfolio-section { padding: 50px 5% !important; }
+    .secao-header h2 { font-size: 1.8rem !important; }
+    .grid-cards-modernos { grid-template-columns: 1fr !important; gap: 20px !important; }
+    .card-img-box { height: 280px !important; }
+    .card-moderno .card-info { background: rgba(18, 18, 20, 0.8) !important; }
+
+    .contato-section { padding: 50px 5% !important; }
+    .contato-grid-box { grid-template-columns: 1fr !important; gap: 35px !important; }
+    .contato-info-bloco { text-align: center !important; }
+    .contato-info-bloco h2 { font-size: 2rem !important; }
+    .redes-sociais-box { width: 100% !important; margin: 0 auto !important; max-width: 400px !important; }
+    .social-item-card { padding: 16px !important; justify-content: center !important; }
+    .social-item-card i { flex-shrink: 0 !important; }
+    .formulario-cyber { padding: 25px 15px !important; }
+}
+
+@media screen and (max-width: 380px) {
+    .hero-textos h1 { font-size: 1.9rem !important; }
+}
