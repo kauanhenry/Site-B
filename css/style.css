@@ -445,10 +445,34 @@ nav a:hover { color: var(--dourado); }
 
     .redes-sociais-box {
         width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
     }
 
     .social-item-card {
-        padding: 15px;
+        padding: 16px;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .social-item-card i {
+        font-size: 1.6rem;
+        flex-shrink: 0;
+    }
+
+    .social-item-card div {
+        text-align: left;
+    }
+
+    .social-item-card div span {
+        font-size: 1rem;
+
+    .social-item-card div small {
+        font-size: 0.85rem;
+        word-break: break-all;
     }
 
     .formulario-cyber {
@@ -460,4 +484,4 @@ nav a:hover { color: var(--dourado); }
     .hero-textos h1 {
         font-size: 1.9rem;
     }
-}
+}}
