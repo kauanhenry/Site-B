@@ -331,113 +331,133 @@ nav a:hover { color: var(--dourado); }
 .escondido { opacity: 0; transform: translateY(30px); transition: 0.6s ease-out; }
 .escondido.surgir { opacity: 1; transform: translateY(0); }
 
-@media screen and (max-width: 1024px) {
-    .hero-textos h1 {
-        font-size: 3.5rem;
-    }
-
-    .hero-banner-box {
-        height: 400px;
-    }
-
-    .contato-grid-box {
-        gap: 40px;
-    }
-}
 
 @media screen and (max-width: 768px) {
 
     .navbar {
-        padding: 15px 5%;
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
+        padding: 12px 5%;
+        flex-direction: row;
+        justify-content: space-between;
+        background: #070708;
     }
 
-    nav a {
-        margin: 0 10px;
-        font-size: 0.85rem;
+    nav a:not(.insta-nav) {
+        display: none;
+    }
+
+    nav {
+        margin: 0;
     }
 
     .insta-nav {
-        display: inline-block;
-        margin-top: 5px;
+        margin: 0;
         padding: 6px 12px;
+        font-size: 0.8rem;
     }
 
     .hero-section {
-        padding: 140px 5% 40px 5%;
-        text-align: center;
+        padding: 90px 5% 40px 5%;
+        min-height: auto;
+        display: block;
     }
 
     .hero-wrapper {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 25px;
+    }
+
+    .hero-textos {
+        text-align: center;
+        order: 2;
     }
 
     .hero-textos h1 {
-        font-size: 2.8rem;
+        font-size: 2.3rem;
+        line-height: 1.2;
     }
 
     .hero-textos p {
-        margin: 0 auto 30px auto;
-        font-size: 1.05rem;
+        font-size: 1rem;
+        margin: 0 auto 25px auto;
+        padding: 0 10px;
     }
 
     .hero-botoes {
-        justify-content: center;
         flex-direction: column;
         gap: 12px;
+        width: 100%;
+    }
+
+    .btn-principal-gold,
+    .btn-secundario-insta {
+        width: 100%;
+        text-align: center;
+        padding: 14px;
     }
 
     .hero-banner-box {
-        height: 300px;
-        grid-row: 1;
+        height: 250px;
+        order: 1;
+        border-radius: 8px;
     }
 
     .portfolio-section {
-        padding: 60px 5%;
+        padding: 50px 5%;
     }
 
     .secao-header h2 {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
     }
 
     .grid-cards-modernos {
         grid-template-columns: 1fr;
-        gap: 25px;
+        gap: 20px;
+    }
+
+    .card-img-box {
+        height: 280px;
+    }
+
+    .card-moderno .card-info {
+        background: rgba(18, 18, 20, 0.8);
     }
 
     .contato-section {
-        padding: 60px 5%;
+        padding: 50px 5%;
     }
 
     .contato-grid-box {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 35px;
+    }
+
+    .contato-info-bloco {
+        text-align: center;
     }
 
     .contato-info-bloco h2 {
-        font-size: 2.2rem;
-        text-align: center;
+        font-size: 2rem;
     }
 
     .contato-info-bloco p {
-        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .redes-sociais-box {
+        width: 100%;
+    }
+
+    .social-item-card {
+        padding: 15px;
     }
 
     .formulario-cyber {
-        padding: 25px 20px;
+        padding: 25px 15px;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 380px) {
     .hero-textos h1 {
-        font-size: 2.2rem;
-    }
-
-    nav a {
-        font-size: 0.8rem;
-        margin: 0 6px;
+        font-size: 1.9rem;
     }
 }
