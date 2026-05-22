@@ -335,10 +335,14 @@ nav a:hover { color: var(--dourado); }
 @media screen and (max-width: 768px) {
 
     .navbar {
-        padding: 12px 5%;
+        padding: 12px 4%;
         flex-direction: row;
         justify-content: space-between;
         background: #070708;
+    }
+
+    .logo {
+        font-size: 1.2rem;
     }
 
     nav a:not(.insta-nav) {
@@ -351,134 +355,13 @@ nav a:hover { color: var(--dourado); }
 
     .insta-nav {
         margin: 0;
-        padding: 6px 12px;
-        font-size: 0.8rem;
+        padding: 6px 10px;
+        font-size: 0.75rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        white-space: nowrap;
     }
-
-    .hero-section {
-        padding: 90px 5% 40px 5%;
-        min-height: auto;
-        display: block;
-    }
-
-    .hero-wrapper {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
-    .hero-textos {
-        text-align: center;
-        order: 2;
-    }
-
-    .hero-textos h1 {
-        font-size: 2.3rem;
-        line-height: 1.2;
-    }
-
-    .hero-textos p {
-        font-size: 1rem;
-        margin: 0 auto 25px auto;
-        padding: 0 10px;
-    }
-
-    .hero-botoes {
-        flex-direction: column;
-        gap: 12px;
-        width: 100%;
-    }
-
-    .btn-principal-gold,
-    .btn-secundario-insta {
-        width: 100%;
-        text-align: center;
-        padding: 14px;
-    }
-
-    .hero-banner-box {
-        height: 250px;
-        order: 1;
-        border-radius: 8px;
-    }
-
-    .portfolio-section {
-        padding: 50px 5%;
-    }
-
-    .secao-header h2 {
-        font-size: 1.8rem;
-    }
-
-    .grid-cards-modernos {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .card-img-box {
-        height: 280px;
-    }
-
-    .card-moderno .card-info {
-        background: rgba(18, 18, 20, 0.8);
-    }
-
-    .contato-section {
-        padding: 50px 5%;
-    }
-
-    .contato-grid-box {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-
-    .contato-info-bloco {
-        text-align: center;
-    }
-
-    .contato-info-bloco h2 {
-        font-size: 2rem;
-    }
-
-    .contato-info-bloco p {
-        margin-bottom: 25px;
-    }
-
-    .redes-sociais-box {
-        width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .social-item-card {
-        padding: 16px;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .social-item-card i {
-        font-size: 1.6rem;
-        flex-shrink: 0;
-    }
-
-    .social-item-card div {
-        text-align: left;
-    }
-
-    .social-item-card div span {
-        font-size: 1rem;
-
-    .social-item-card div small {
-        font-size: 0.85rem;
-        word-break: break-all;
-    }
-
-    .formulario-cyber {
-        padding: 25px 15px;
-    }
-}
 
 @media screen and (max-width: 380px) {
     .hero-textos h1 {
