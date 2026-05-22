@@ -330,3 +330,114 @@ nav a:hover { color: var(--dourado); }
 
 .escondido { opacity: 0; transform: translateY(30px); transition: 0.6s ease-out; }
 .escondido.surgir { opacity: 1; transform: translateY(0); }
+
+@media screen and (max-width: 1024px) {
+    .hero-textos h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-banner-box {
+        height: 400px;
+    }
+
+    .contato-grid-box {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        padding: 15px 5%;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 0.85rem;
+    }
+
+    .insta-nav {
+        display: inline-block;
+        margin-top: 5px;
+        padding: 6px 12px;
+    }
+
+    .hero-section {
+        padding: 140px 5% 40px 5%;
+        text-align: center;
+    }
+
+    .hero-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero-textos h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-textos p {
+        margin: 0 auto 30px auto;
+        font-size: 1.05rem;
+    }
+
+    .hero-botoes {
+        justify-content: center;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero-banner-box {
+        height: 300px;
+        grid-row: 1;
+    }
+
+    .portfolio-section {
+        padding: 60px 5%;
+    }
+
+    .secao-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .grid-cards-modernos {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .contato-section {
+        padding: 60px 5%;
+    }
+
+    .contato-grid-box {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contato-info-bloco h2 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .contato-info-bloco p {
+        text-align: center;
+    }
+
+    .formulario-cyber {
+        padding: 25px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-textos h1 {
+        font-size: 2.2rem;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+        margin: 0 6px;
+    }
+}
