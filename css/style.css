@@ -111,7 +111,7 @@ nav a:hover { color: var(--dourado); }
 }
 
 .hero-textos p {
-    color: var(--texto-mutated);
+    color: var(--texto-mutado);
     font-size: 1.2rem;
     max-width: 540px;
     margin-bottom: 35px;
